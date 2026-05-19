@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+from fastapi.middleware.cors import CORSMiddleware
 from backend.app.api.routes import router
 
 
@@ -19,3 +19,11 @@ def home():
     return {
         "message": "SmartDefectAI API Running"
     }
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)

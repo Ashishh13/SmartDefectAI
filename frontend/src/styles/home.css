@@ -1,0 +1,104 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #0f172a;
+
+    color: white;
+}
+
+
+.container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+
+h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+
+.dropzone {
+
+    width: 400px;
+
+    height: 200px;
+
+    border: 2px dashed #38bdf8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+
+.dropzone:hover {
+
+    background: rgba(56, 189, 248, 0.1);
+}
+
+
+button {
+
+    padding: 12px 24px;
+
+    border: none;
+
+    background: #38bdf8;
+
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+}
+
+
+.result {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    width: 400px;
+
+    text-align: center;
+}
+
+
+.filename {
+
+    margin-bottom: 20px;
+}
