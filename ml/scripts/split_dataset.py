@@ -4,8 +4,8 @@ import shutil
 
 
 SOURCE_DIR = "data/raw/NEU-DET"
-TRAIN_DIR = "data/raw/train"
-VAL_DIR = "data/raw/val"
+TRAIN_DIR = "data/raw/NEU-DET/train"
+VAL_DIR = "data/raw/NEU-DET/val"
 
 SPLIT_RATIO = 0.8
 
