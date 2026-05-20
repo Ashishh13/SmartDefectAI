@@ -43,9 +43,17 @@ export default function Home() {
             setLoading(true);
 
             const response = await API.post(
-                "/predict",
-                formData
-            );
+    "/predict",
+    formData,
+    {
+        headers: {
+            "Content-Type": "multipart/form-data"
+        }
+    }
+);
+
+console.log(response.data);
+
 
             setPrediction(response.data.prediction);
 
@@ -53,7 +61,7 @@ export default function Home() {
 
         } catch (error) {
 
-            console.error(error);
+            console.error(error.response?.data || error.message);
 
         } finally {
 
